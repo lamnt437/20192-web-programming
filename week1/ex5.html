@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container {
+                max-width: 1080px;
+                margin: auto
+            }
+            
+            .header {
+                display: flex;
+                flex-direction: row;
+            }
+            
+            .header .detail {
+                flex-basis: 80%;
+                flex-grow: 1;
+                flex-shrink: 1;
+                background-color: #eee;
+                padding: 1.5em;
+            }
+            
+            .header .image {
+                flex-basis: 20%;
+                flex-grow: 1;
+                flex-shrink: 1;
+                padding: 1.5em;
+            }
+            
+            .header .image img {
+                width: 200px;
+            }
+            
+            .main {
+                display: grid;
+                grid-template-rows: repeat(8, 1fr);
+                grid-template-columns: repeat(5, 1fr);
+            }
+            
+            .main .label {
+                grid-row: span 1;
+                grid-column: 1 / 2;
+                background-color: bisque;
+                padding: 0.5em;
+            }
+            
+            .main .content {
+                grid-row: span 1;
+                grid-column: 2 / 6;
+                background-color: #ddd;
+                padding: 0.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="detail">
+                    <h2>Personal Details</h2>
+                    <a href="https://google.com">Google</a>
+                </div>
+                <div class="image">
+                    <h2>Image</h2>
+                    <img src="https://toppng.com/uploads/preview/free-png-batman-logo-png-images-transparent-logo-do-batman-vetor-11563280782jmcmry4xfj.png" />
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="label">
+                    Education process
+                </div>
+                <div class="content">
+                    <p>HUST</p>
+                </div>
+
+                <div class="label">
+                    <p>Working process</p>
+                </div>
+                <div class="content">
+                    <p>HUST</p>
+                </div>
+
+                <div class="label">
+                    <p>Society activities</p>
+                </div>
+                <div class="content">
+                    <p>Nothing</p>
+                </div>
+
+                <div class="label">
+                    Skills
+                </div>
+                <div class="content">
+                    <p>Nothing</p>
+                </div>
+
+                <div class="label">
+                   Experiences 
+                </div>
+                <div class="content">
+                    <p>Nothing</p>
+                </div>
+
+                <div class="label">
+                    Certifications
+                </div>
+                <div class="content">
+                    <p>Nothing</p>
+                </div>
+
+                <div class="label">
+                    Hobbies
+                </div>
+                <div class="content">
+                    <p>Nothing</p>
+                </div>
+
+                <div class="label">
+                    Desire
+                </div>
+                <div class="content">
+                    <p>Nothing</p>
+                </div>
+
+                <table style="width:100%;">
+                    <tr>
+                      <th>This</th>
+                      <th>is</th>
+                      <th>a Table</th>
+                    </tr>
+                    <tr>
+                      <td>This</td>
+                      <td>is</td>
+                      <td>the first row</td>
+                    </tr>
+                    <tr>
+                      <td>This</td>
+                      <td>is</td>
+                      <td>the second row</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
