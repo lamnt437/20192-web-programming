@@ -37,6 +37,7 @@
                         <p>Age: <?php if(isset($_POST['age'])) echo $_POST['age'];?></p>
                         <p>Gender: <?php if(isset($_POST['gender'])) echo $_POST['gender'];?></p>
                         <p>Class: <?php if(isset($_POST['class'])) echo $_POST['class'];?></p>
+                        <p>Class: <?php if(isset($_POST['hobby'])) echo $_POST['hobby'];?></p>
                     </div>
                 </div>
             </main>
