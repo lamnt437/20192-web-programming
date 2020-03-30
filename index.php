@@ -7,5 +7,8 @@
         print ("<br> Using PHP is not hard<br>");
         ?>
         and you can learn to use it quickly! 
+        <a href="week1">Week 1</a>
+        <a href="week2">Week 2</a>
+        <a href="week3">Week 3</a>
     </body>
 </html>
