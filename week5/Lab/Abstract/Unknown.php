@@ -7,13 +7,10 @@
  */
 
 /**
- * Description of Polygon
+ * Description of Unknown
  *
  * @author lamnt
  */
-require_once 'Shape.php';
-
-abstract class Polygon extends Shape {
+class Unknown {
     //put your code here
-    abstract function getNumberOfSides();
 }

@@ -11,6 +11,9 @@
  *
  * @author lamnt
  */
+namespace general;
+
 abstract class Shape {
     abstract function getArea();
 }
+

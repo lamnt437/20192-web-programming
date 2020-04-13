@@ -7,17 +7,17 @@
  */
 
 /**
- * Description of Circle
+ * Description of Polygon
  *
  * @author lamnt
  */
-require_once 'Shape.php';
+//require_once 'Shape.php';
 
-class Circle extends Shape {
+namespace general\shape;
+
+use general\Shape as Shape;
+
+abstract class Polygon extends Shape {
     //put your code here
-    public $radius;
-    
-    function getArea() {
-        return pi() * $this->radius * $this->radius;
-    }
+    abstract function getNumberOfSides();
 }

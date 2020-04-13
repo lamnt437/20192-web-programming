@@ -11,6 +11,9 @@
  *
  * @author lamnt
  */
+
+namespace general;
+
 class Color {
     //put your code here
     public $name;

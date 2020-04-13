@@ -11,17 +11,19 @@
  *
  * @author lamnt
  */
-require_once 'Polygon.php';
+
+namespace general\shape\polygon;
+use general\shape\Polygon as Polygon;
 
 class Rectangle extends Polygon {
     //put your code here
     public $height;
     public $width;
-    
+
     function getArea() {
         return $this->height * $this->width;
     }
-    
+
     function getNumberOfSides() {
         return 4;
     }

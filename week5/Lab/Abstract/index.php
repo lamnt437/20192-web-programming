@@ -11,14 +11,26 @@
  *
  * @author lamnt
  */
-require_once 'Rectangle.php';
-require_once 'Triangle.php';
-require_once 'Circle.php';
-require_once 'Color.php';
+//require_once 'Rectangle.php';
+//require_once 'Triangle.php';
+//require_once 'Circle.php';
+//require_once 'Color.php';
+
+//put your code here
+function __autoload($class) {
+    require_once(lcfirst($class) . ".php");
+}
+
+use general\shape\polygon\Rectangle as Rectangle;
+use general\shape\polygon\Triangle as Triangle;
+use general\shape\Circle as Circle;
+use general\Color as Color;
+use general\Shape as Shape;
+use general\shape\Polygon as Polygon;
 
 class Test_Shape {
-    //put your code here
     public static function main() {
+        
         $my_collection = [];
     
         $r = new Rectangle();
@@ -43,7 +55,7 @@ class Test_Shape {
         $my_collection[] = $color;
         unset($color);
         
-        foreach($my_collection as $item) {
+        foreach($my_collection as $item) {   
             if($item instanceof Shape) {
                 echo "Area: " . $item->getArea() . "<br>";
             }

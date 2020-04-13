@@ -11,16 +11,18 @@
  *
  * @author lamnt
  */
-require_once 'Polygon.php';
+namespace general\shape\polygon;
+
+use general\shape\Polygon as Polygon;
 
 class Triangle extends Polygon {
     public $base;
     public $height;
-    
+
     function getArea() {
         return ($this->base * $this->height) / 2;
     }
-    
+
     function getNumberOfSides() {
         return 3;
     }
