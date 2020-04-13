@@ -25,19 +25,23 @@ class Page {
         $this->copyright = $copyright;
     }
     
-    function addHeader() {
-        echo "Header of the page!<br>";
+    public function addHeader() {
+        echo "Title: " . $this->title . "<br>";
     }
     
-    function addContent($content) {
-        echo $content . "<br>";
+    public function addContent($content) {
+        echo "Page: " . $this->page . "<br>";
+        echo "Content: " . $content . "<br>";
     }
     
-    function addFooter() {
-        echo "Footer of the page!<br>";
+    public function addFooter() {
+        echo "Footer: " . $this->copyright . " " . $this->year . "<br>";
     }
     
     function get() {
-        echo $page . "<br>" . $title . "<br>" . $year . "<br>" . $copyright . "<br>";
+        echo $this->title . "<br>";
+        echo $this->page . "<br>";
+        echo $this->copyright . "<br>";
+        echo $this->year . "<br>";
     }
 }
