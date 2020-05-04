@@ -17,3 +17,11 @@ $result1 = preg_match('/[A-Z][a-z]/', "EEh");
 $result2 = preg_match('/^[A-Z][a-z]/', "EEh");
 
 echo $result2;
+
+function validate_phone($number) {
+    return preg_match('/^\+[0-9]+-?[0-9]+/', $number);
+}
+
+$string = "+84904569437";
+echo "validate phone" . "<br>";
+echo validate_phone($string);
