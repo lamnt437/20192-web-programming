@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student>
+    <name>Lam Nguyen</name>
+    <age>22</age>
+    <gender>Male</gender>
+    <class>ICT.01-K61</class>
+    <address>
+        <district>Thanh Xuan</district>
+        <city>Hanoi</city>
+        <country>Vietname</country>
+    </address>
+</student>
