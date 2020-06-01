@@ -6,8 +6,17 @@
  * and open the template in the editor.
  */
 
-$bg = $_COOKIE['bg_color'];
-$fg = $_COOKIE['fg_color'];
+if(isset($_SESSION['bg_color'])) {
+    $bg = $_SESSION['bg_color'];
+} else {
+    $bg = '#fff';
+}
+
+if(isset($_SESSION['fg_color'])) {
+    $fg = $_SESSION['fg_color'];
+} else {
+    $fg = '#000';
+}
 ?>
 
 <html>
