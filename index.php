@@ -18,6 +18,7 @@
             <li><a href="week7">Week 7 - regex</a></li>
             <li><a href="week8">Week 8 - css</a></li>
             <li><a href="week9">Week 9 - XML</a></li>
+            <li><a href="week10">Week 10 - MVC</a></li>
         </ul>
     </body>
 </html>
